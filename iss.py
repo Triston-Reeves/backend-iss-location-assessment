@@ -27,7 +27,7 @@ def indianapolis():
 def mr_turtle():
     space = turtle.Turtle()
     n_pass = indianapolis()
-    rise_time = time.ctime(n_pass["response"][1]["risetime"])
+    rise_time = time.ctime(n_pass["response"][0]["risetime"])
     show = turtle.Screen()
     show.setup(width=720, height=360, startx=0, starty=0)
     show.setworldcoordinates(-180, -90, 180, 90)
